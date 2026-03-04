@@ -1,0 +1,43 @@
+name: Organize IPL Images
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  organize-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create images directory
+        run: mkdir -p images
+
+      - name: Move and rename screenshots
+        run: |
+          # Rename the screenshot files to meaningful names
+          [ -f "Screenshot 2026-03-04 162629.png" ] && mv "Screenshot 2026-03-04 162629.png" "images/team_wins.png"
+          [ -f "Screenshot 2026-03-04 162635.png" ] && mv "Screenshot 2026-03-04 162635.png" "images/stadium_scores.png"
+          [ -f "Screenshot 2026-03-04 162642.png" ] && mv "Screenshot 2026-03-04 162642.png" "images/player_stats.png"
+          [ -f "Screenshot 2026-03-04 162650.png" ] && mv "Screenshot 2026-03-04 162650.png" "images/match_analysis.png"
+
+      - name: Update README.md with images
+        run: |
+          # Append images section to README if not exists
+          if ! grep -q "Sample Visualization" README.md; then
+            echo "" >> README.md
+            echo "## Sample Visualization" >> README.md
+            echo "" >> README.md
+            echo "![Team Wins](images/team_wins.png)" >> README.md
+            echo "" >> README.md
+            echo "![Highest Scoring Stadiums](images/stadium_scores.png)" >> README.md
+          fi
+
+      - name: Commit and Push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add images/ README.md || true
+          git commit -m "🎬 Organize images into images/ folder and update README" || echo "No changes to commit"
+          git push || echo "Nothing to push"
