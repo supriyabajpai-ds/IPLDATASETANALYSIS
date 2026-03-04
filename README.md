@@ -28,5 +28,3 @@ Source: Kaggle IPL Dataset (2008–2023)
 - M. Chinnaswamy Stadium has some of the highest scoring matches.
 - Certain teams perform better when batting first.
 
-## Future Improvements
-- Build a dashboard using Streamlit.
