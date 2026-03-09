@@ -163,25 +163,74 @@ IPLDATASETANALYSIS/
 
 ## 📊 Key Visualizations
 
-### 1. Top 5 Highest Winning Teams
-![Top 5 Teams Pie Chart](images/1_top_5_teams_pie_chart.png)
+## 1️⃣ Top 5 Highest Winning Teams
 
-### 2. Did Toss Winner Also Win the Match?
-![Toss Impact Analysis](images/2_toss_winner_match_win.png)
+![Top Teams](images/1_top_5_teams_pie_chart.png)
 
-This chart shows that approximately 50% of toss winners actually win the match, 
-indicating that **toss is not a deterministic factor** in match outcomes.
+**Teams shown with percentages:**
 
-### 3. Top Teams by Match Wins
-![Teams Bar Chart](images/3_top_teams_bar_chart.png)
+- Mumbai Indians (MI): 22.5%
+- Chennai Super Kings (CSK): 21.2%
+- Kolkata Knight Riders (KKR): 19.8%
+- Royal Challengers Bangalore (RCB): 18.6%
+- Sunrisers Hyderabad (SRH): 17.8%
 
-Mumbai Indians clearly leads with 140 wins, followed by Chennai Super Kings with 132 wins.
+**Key Insight**
 
-### 4. Top 10 Batsmen Performance
-![Top Batsmen Chart](images/4_top_batsmen_bar_chart.png)
+Mumbai Indians lead with **22.5% of wins** among the top teams.
 
-Virat Kohli stands out with 109 appearances as a key batsman, 
-demonstrating remarkable consistency across IPL seasons.
+---
+
+## 2️⃣ Did Toss Winner Also Win the Match?
+
+![Toss Analysis](images/toss_match_result.png)
+
+**Results**
+
+- No → ~510 matches
+- Yes → ~520 matches
+
+**Key Insight**
+
+The toss result **does not strongly determine match outcomes**.  
+There is approximately a **50-50 chance**.
+
+---
+
+## 3️⃣ Top Teams by Match Wins
+
+![Team Wins](images/team_match_wins.png)
+
+**Ranking**
+
+1. Mumbai Indians – 140 wins
+2. Chennai Super Kings – 132 wins
+3. Kolkata Knight Riders – 123 wins
+4. Royal Challengers Bangalore – 117 wins
+5. Sunrisers Hyderabad – 112 wins
+
+**Key Insight**
+
+Mumbai Indians show **clear dominance with 140 wins**.
+
+---
+
+## 4️⃣ Top 10 Batsmen Appearances
+
+![Top Batsmen](images/top_batsmen.png)
+
+**Top Players**
+
+1. Virat Kohli – 109
+2. Shikhar Dhawan – 97
+3. David Warner – 93
+4. Rohit Sharma – 87
+5. Robin Uthappa – 82
+6. Suresh Raina – 76
+7. AB de Villiers – 76
+8. MS Dhoni – 66
+9. Gautam Gambhir – 65
+10. Chris Gayle – 63.
 
 ## Future Analysis Opportunities
 
