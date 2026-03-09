@@ -161,6 +161,28 @@ IPLDATASETANALYSIS/
 
 5. **Scoring Trends:** Highest-scoring matches occur at specific venues with batting-friendly conditions
 
+## 📊 Key Visualizations
+
+### 1. Top 5 Highest Winning Teams
+![Top 5 Teams Pie Chart](images/1_top_5_teams_pie_chart.png)
+
+### 2. Did Toss Winner Also Win the Match?
+![Toss Impact Analysis](images/2_toss_winner_match_win.png)
+
+This chart shows that approximately 50% of toss winners actually win the match, 
+indicating that **toss is not a deterministic factor** in match outcomes.
+
+### 3. Top Teams by Match Wins
+![Teams Bar Chart](images/3_top_teams_bar_chart.png)
+
+Mumbai Indians clearly leads with 140 wins, followed by Chennai Super Kings with 132 wins.
+
+### 4. Top 10 Batsmen Performance
+![Top Batsmen Chart](images/4_top_batsmen_bar_chart.png)
+
+Virat Kohli stands out with 109 appearances as a key batsman, 
+demonstrating remarkable consistency across IPL seasons.
+
 ## Future Analysis Opportunities
 
 - **Predictive Modeling:** Develop models to predict match winners
